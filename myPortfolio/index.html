@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="images/tanishq-logo.png" width="200" height="150" alt="Logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="detel">
+            <h1>I'm TANISHQ <span class="span">GUPTA</span></h1>
+            <p>This is my official portfolio website to show all
+                <br> details and work experience in web development
+            </p>
+            <a href="#">Download CV</a>
+        </div>
+        <div class="images">
+            <img src="images/shape.png" width="200" height="200" class="shape" alt="Shape Image">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content">
+        <h1>About Me</h1>
+        <p>Hi, I'm Tanishq Gupta, a BCA student at Mangalmay Institute of Management & Technology. I’m passionate about technology and eager to apply my skills in programming and web development. Currently, I’m honing my expertise in languages like C, CPP, NodeJs and web technologies including HTML, CSS, and JavaScript.</p>
+        <p>Through various projects and coursework, I've developed a strong foundation in software development and database management. I’m excited to explore new opportunities and challenges in the tech field.</p>
+    </section>
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="content">
+        <h1>Portfolio</h1>
+        <p>Here are some of the projects I’ve worked on during my studies and personal time. Click on each project to learn more about it.</p>
+    
+        <div class="portfolio-container">
+            <!-- Project 1 -->
+            <div class="portfolio-item">
+                <img src="images/project.png" alt="Project 1">
+                <h2>Project Name 1</h2>
+                <p>A brief description of Project Name 1, showcasing the key features and technologies used. This project involved [brief detail].</p>
+                <a href="https://example.com/project1" target="_blank">View Project</a>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="portfolio-item">
+                <img src="images/project.png" alt="Project 2">
+                <h2>Project Name 2</h2>
+                <p>A brief description of Project Name 2, detailing the main objectives and technologies utilized. This project focused on [brief detail].</p>
+                <a href="https://example.com/project2" target="_blank">View Project</a>
+            </div>
+    
+            <!-- Project 3 -->
+            <div class="portfolio-item">
+                <img src="images/project.png" alt="Project 3">
+                <h2>Project Name 3</h2>
+                <p>A brief description of Project Name 3, outlining the core functionalities and tools used. This project aimed at [brief detail].</p>
+                <a href="https://example.com/project3" target="_blank">View Project</a>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="content">
+        <h1>Contact</h1>
+        <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
+        
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TANISHQ GUPTA. All rights reserved.</p>
+    </footer>
+</body>
+</html>

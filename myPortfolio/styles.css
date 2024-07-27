@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    scroll-behavior: smooth; /* Smooth scrolling */
+    padding-top: 60px; /* Space for smaller fixed navbar (adjust if needed) */
+}
+
+nav {
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Reduced padding for smaller height */
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for visibility */
+    z-index: 1000; /* Ensure the navbar stays on top of other content */
+}
+
+nav img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px; /* Reduced margin for smaller navbar height */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px; /* Adjust font size if needed */
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* Keep other styles as they are for the rest of the layout */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 5%;
+    background: #eff4fd;
+    height: 100vh;
+    text-align: left;
+}
+
+.detel {
+    max-width: 50%;
+}
+
+.detel h1 {
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.span {
+    color: orange;
+}
+
+.detel p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.detel a {
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 5px; 
+}
+
+.images {
+    position: relative;
+    text-align: right;
+}
+
+.images .shape {
+    width: 55%;
+    height: auto;
+    transition: transform 1s;
+}
+
+.images:hover .shape {
+    transform: translateY(-20px); /* Hover effect */
+}
+
+.content {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #212121;
+    color: #fff;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+#portfolio {
+    padding: 60px 5%; /* Padding around the section */
+    text-align: center; /* Center-align text */
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between portfolio items */
+}
+
+.portfolio-item {
+    background: #fff; /* Background color for portfolio items */
+    border: 1px solid #ddd; /* Light border for items */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside items */
+    width: calc(33% - 40px); /* Width of items with spacing adjustment */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.portfolio-item img {
+    width: 100px; /* Set width of images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space below images */
+}
+
+.portfolio-item h2 {
+    font-size: 20px; /* Font size for project titles */
+    margin: 10px 0; /* Space around titles */
+}
+
+.portfolio-item p {
+    color: #555; /* Dark gray for text */
+    margin-bottom: 15px; /* Space below description */
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    font-weight: bold;
+}
+
+.portfolio-item a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+#about {
+    background: #f9f9f9; /* Light background color */
+    padding: 60px 5%; /* Spacing around the content */
+    text-align: center; /* Center-align text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin: 20px 0; /* Margin to separate from other sections */
+}
+
+#about h1 {
+    font-size: 36px;
+    color: #212121; /* Dark color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Arial', sans-serif; /* Font family for consistency */
+}
+
+#about p {
+    font-size: 18px;
+    color: #555; /* Dark gray for text */
+    line-height: 1.6; /* Improve readability with line spacing */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+#about p:last-of-type {
+    margin-bottom: 0; /* Remove margin from the last paragraph */
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding: 40px 5%; /* Adjust padding on smaller screens */
+    }
+    
+    #about h1 {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+    
+    #about p {
+        font-size: 16px; /* Adjust font size for readability on smaller screens */
+    }
+}
+
+#contact {
+    background: #fff; /* White background for the form section */
+    padding: 60px 5%; /* Spacing around the content */
+    text-align: center; /* Center-align text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin: 20px 0; /* Margin to separate from other sections */
+}
+
+#contact h1 {
+    font-size: 36px;
+    color: #212121; /* Dark color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Arial', sans-serif; /* Font family for consistency */
+}
+
+#contact p {
+    font-size: 18px;
+    color: #555; /* Dark gray for text */
+    margin-bottom: 30px; /* Space below the paragraph */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px; /* Maximum width of the form */
+    margin: 0 auto; /* Center the form */
+}
+
+.form-group {
+    width: 100%; /* Full width for form groups */
+    margin-bottom: 20px; /* Space between form elements */
+    text-align: left; /* Left-align labels and inputs */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px; /* Space below the label */
+}
+
+input, textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border for input fields */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for input fields */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+button {
+    background: #212121; /* Dark background for the button */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background: #333; /* Darker background on hover */
+}
+
+@media (max-width: 768px) {
+    #contact {
+        padding: 40px 5%; /* Adjust padding on smaller screens */
+    }
+    
+    #contact h1 {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+    
+    #contact p {
+        font-size: 16px; /* Adjust font size for readability on smaller screens */
+    }
+    
+    form {
+        padding: 0 10px; /* Padding adjustment for form */
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: calc(50% - 20px); /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-item {
+        width: 100%; /* Full width on very small screens */
+    }
+}
